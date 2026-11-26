@@ -6,176 +6,38 @@
     <title>ConFixed | Construction Chemical Solutions</title>
     <style>
         :root {
-            --primary: #0f4c5c;      /* Deep Teal */
-            --secondary: #1b9aaa;    /* Sea Green / Accent */
+            --primary: #0f4c5c;
+            --secondary: #1b9aaa;
             --dark: #141b1d;
             --light: #f4f7f8;
             --white: #ffffff;
         }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: var(--light);
-            scroll-behavior: smooth;
-        }
-        header {
-            background-color: var(--dark);
-            color: var(--white);
-            padding: 1.5rem 1rem;
-            text-align: center;
-            border-bottom: 4px solid var(--secondary);
-        }
-        header h1 {
-            font-size: 2.2rem;
-            letter-spacing: 1px;
-        }
-        header span {
-            color: var(--secondary);
-        }
-        header p {
-            font-size: 0.95rem;
-            color: #ccc;
-            margin-top: 0.3rem;
-        }
-        nav {
-            background-color: var(--primary);
-            padding: 0.8rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-        nav a:hover {
-            color: #a8e6cf;
-        }
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-            color: var(--white);
-            text-align: center;
-            padding: 4rem 1.5rem;
-        }
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            max-width: 700px;
-            margin: 0 auto 1.5rem auto;
-            font-size: 1.05rem;
-            color: #e0ecee;
-        }
-        .btn {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: var(--white);
-            padding: 0.8rem 1.8rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin: 0.3rem;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #147a87;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2.5rem 1.2rem;
-        }
-        .section-title {
-            text-align: center;
-            color: var(--primary);
-            font-size: 1.7rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        .card {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-            border-top: 4px solid var(--secondary);
-        }
-        .card h3 {
-            color: var(--primary);
-            margin-bottom: 0.6rem;
-        }
-        .about-box {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-            margin-bottom: 2rem;
-        }
-        .why-list {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1rem;
-        }
-        .why-list li {
-            background: var(--white);
-            padding: 1.2rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--primary);
-            font-weight: 500;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .contact-box {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-        }
-        .contact-info {
-            margin: 1.5rem 0;
-            font-size: 1.05rem;
-        }
-        .contact-info p {
-            margin: 0.6rem 0;
-        }
-        .social-links {
-            margin-top: 1.2rem;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 0.3rem 0.6rem;
-            padding: 0.5rem 1rem;
-            background-color: var(--primary);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
-        footer {
-            background-color: var(--dark);
-            color: #bbb;
-            text-align: center;
-            padding: 1.5rem 1rem;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: var(--light); }
+        header { background-color: var(--dark); color: var(--white); padding: 1.5rem 1rem; text-align: center; border-bottom: 4px solid var(--secondary); }
+        header h1 { font-size: 2.2rem; }
+        header span { color: var(--secondary); }
+        header p { font-size: 0.95rem; color: #ccc; margin-top: 0.3rem; }
+        nav { background-color: var(--primary); padding: 0.8rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: var(--white); text-decoration: none; margin: 0 12px; font-weight: 600; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%); color: var(--white); text-align: center; padding: 4rem 1.5rem; }
+        .hero h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .hero p { max-width: 700px; margin: 0 auto 1.5rem auto; font-size: 1.05rem; color: #e0ecee; }
+        .btn { display: inline-block; background-color: var(--secondary); color: var(--white); padding: 0.8rem 1.8rem; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 0.3rem; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.2rem; }
+        .section-title { text-align: center; color: var(--primary); font-size: 1.7rem; margin-bottom: 1.5rem; }
+        .category-card { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.06); margin-bottom: 2rem; border-top: 4px solid var(--primary); }
+        .category-card h3 { color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem; }
+        .product-subgroup { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .product-subgroup h4 { color: var(--secondary); font-size: 1.1rem; margin-top: 0.5rem; }
+        .product-list { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 0.5rem; color: #555; }
+        .about-box { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.06); margin-bottom: 2rem; }
+        .why-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .why-list li { background: var(--white); padding: 1.2rem; border-radius: 6px; border-left: 4px solid var(--primary); font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+        .contact-box { background: var(--white); padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 3px 10px rgba(0,0,0,0.06); }
+        .contact-info { margin: 1.5rem 0; font-size: 1.05rem; }
+        .contact-info p { margin: 0.6rem 0; }
+        footer { background-color: var(--dark); color: #bbb; text-align: center; padding: 1.5rem 1rem; font-size: 0.9rem; margin-top: 2rem; }
     </style>
 </head>
 <body>
@@ -187,7 +49,7 @@
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#expertise">Products & Expertise</a>
+        <a href="#products">Products</a>
         <a href="#about">About & Commitment</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -196,36 +58,65 @@
         <h2>Welcome to ConFixed</h2>
         <p>ConFixed is a leading construction chemical brand managed by the dynamic team of ConFixed Buildochem. We specialize in providing high-quality construction chemicals that cater to the diverse needs of the building and construction industry.</p>
         <a href="https://wa.me/918001513568" target="_blank" class="btn">Chat on WhatsApp</a>
-        <a href="#expertise" class="btn" style="background-color: transparent; border: 1px solid #fff;">Explore Solutions</a>
     </section>
 
     <div class="container">
         
-        <section id="expertise">
-            <h2 class="section-title">Our Expertise</h2>
-            <p style="text-align: center; max-width: 750px; margin: 0 auto 1.5rem auto;">
-                At ConFixed, we offer a comprehensive range of construction chemicals designed to enhance the durability, sustainability, and aesthetic appeal of buildings, ensuring that our customers' projects stand the test of time.
-            </p>
-            <div class="card-grid">
-                <div class="card">
-                    <h3>Tile & Stone Fixing Solutions</h3>
-                    <p>High-strength cementitious tile adhesives, unsanded tile grouts, and stain-resistant 2K/3K epoxy tile grouts for lasting floor and wall installations.</p>
+        <section id="products">
+            <h2 class="section-title">Our Comprehensive Product Range</h2>
+            
+            <!-- Main Branch 1 -->
+            <div class="category-card">
+                <h3>Tile and Stone Care</h3>
+                
+                <div class="product-subgroup">
+                    <h4>Fixing Solutions</h4>
+                    <ul class="product-list">
+                        <li>High-strength Tile Adhesives</li>
+                        <li>Stone Fixing Mortars</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <h3>Wall Care Solutions</h3>
-                    <p>Superior whiteness, smooth-finish waterproof wall putty and surface preparation products built for long-term protection.</p>
+                <div class="product-subgroup">
+                    <h4>Grouting Solutions</h4>
+                    <ul class="product-list">
+                        <li>Cementitious Tile Grouts</li>
+                        <li>Stain-Resistant Epoxy Tile Grouts</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <h3>Waterproofing & Maintenance</h3>
-                    <p>Advanced polymer-modified waterproofing systems and specialized tile & marble cleaners for complete building care.</p>
+            </div>
+
+            <!-- Main Branch 2 -->
+            <div class="category-card">
+                <h3>Wall Care Solutions</h3>
+                
+                <div class="product-subgroup">
+                    <h4>Surface Preparation & Finishes</h4>
+                    <ul class="product-list">
+                        <li>Waterproof Wall Putty</li>
+                        <li>Acrylic Wall Putty</li>
+                        <li>Interior & Exterior Primers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Branch 3 -->
+            <div class="category-card">
+                <h3>Waterproofing Solutions</h3>
+                
+                <div class="product-subgroup">
+                    <h4>Integral & Coating Systems</h4>
+                    <ul class="product-list">
+                        <li>Advanced Polymer Waterproofer</li>
+                        <li>Roof & Basement Waterproofing Membranes</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="about" style="margin-top: 3rem;">
-            <h2 class="section-title">Our Commitment</h2>
+            <h2 class="section-title">Our Expertise & Commitment</h2>
             <div class="about-box">
-                <p>At <strong>ConFixed Buildochem</strong>, we are committed to delivering exceptional quality, innovative solutions, and unparalleled customer service. Our team of experts works tirelessly to ensure that our products meet the highest standards of quality, safety, and performance.</p>
+                <p>At ConFixed, we offer a comprehensive range of construction chemicals designed to enhance the durability, sustainability, and aesthetic appeal of buildings. At <strong>ConFixed Buildochem</strong>, we are committed to delivering exceptional quality, innovative solutions, and unparalleled customer service.</p>
             </div>
 
             <h2 class="section-title">Why Choose ConFixed?</h2>
@@ -242,14 +133,10 @@
             <div class="contact-box">
                 <p>We invite you to explore our range of construction chemicals and experience the ConFixed difference.</p>
                 <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:support@confixed.com" style="color: var(--primary);">support@confixed.com</a></p>
-                    <p><strong>WhatsApp / Phone:</strong> <a href="https://wa.me/918001513568" target="_blank" style="color: var(--primary);">+91 8001513568</a></p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/confixedindia" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/confixedindia" target="_blank">Instagram</a>
-                    <!-- ইউটিউব চ্যানেল তৈরি হলে নিচের # এর জায়গায় লিংক বসিয়ে দেবেন -->
-                    <a href="#contact">YouTube (Coming Soon)</a>
+                    <p><strong>Email:</strong> support@confixed.com</p>
+                    <p><strong>WhatsApp:</strong> +91 8001513568</p>
+                    <p><strong>Facebook:</strong> www.facebook.com/confixedindia</p>
+                    <p><strong>Instagram:</strong> https://www.instagram.com/confixedindia</p>
                 </div>
             </div>
         </section>
