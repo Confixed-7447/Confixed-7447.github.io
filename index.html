@@ -2,10 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConFixed - Professional Services</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #ff9f43;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hero {
+            background: #f4f4f4;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff9f43;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This site is coming soon.</p>
+
+<header>
+    <h1>ConFixed</h1>
+    <p>Your Trusted Partner for Excellence</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home" class="hero">
+        <h2>Welcome to Our Official Website</h2>
+        <p>We provide top-notch services tailored to your needs. Stay tuned for our full launch!</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>ConFixed is dedicated to delivering quality and reliability. Our team is working hard to bring you the best experience.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at: <strong>info@confixed.com</strong></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 ConFixed. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
